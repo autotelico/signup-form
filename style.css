@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Slab:wght@300&display=swap");
+#access-container button, label, h2, .heading-container p#heading {
+  font-weight: 700;
+}
+
+body {
+  position: relative;
+}
+
+.supreme-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.side-hero {
+  background-image: url(https://images.unsplash.com/photo-1700573941868-5547f43dcbed?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 40vw;
+  position: relative;
+}
+
+.website-logo-stripe {
+  height: 400px;
+  width: 100%;
+  background: rgba(71, 62, 54, 0.6);
+  position: relative;
+  top: 15%;
+}
+
+.website-logo-stripe .image-container {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-container p {
+  color: #999;
+  text-align: center;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 16px;
+}
+
+.right-container {
+  position: absolute;
+  background-color: #eee;
+  height: 100vh;
+  width: 60vw;
+  left: 40%;
+}
+
+.heading-container {
+  height: 20%;
+  width: 65%;
+  position: relative;
+  top: 160px;
+  left: 60px;
+  background-color: purple;
+}
+
+.heading-container p#heading {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.form-container {
+  width: 60vw;
+  height: 261px;
+  background: peachpuff;
+  position: absolute;
+  top: 35%;
+  padding: 20px 60px 0;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  box-shadow: 0 10px 10px lightgray;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  height: 95%;
+  width: 60%;
+  line-height: 1rem;
+  row-gap: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  width: 250px;
+  height: 1.5rem;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: calc(0.8rem + 5px);
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+input:focus {
+  border: 2px solid blue;
+  box-shadow: 3px 7px 10px darkgray;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:not(:empty):invalid {
+  border-color: red;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  line-height: 1.3rem;
+}
+
+input:invalid + label::after {
+  content: "* Required.";
+  color: red;
+  position: relative;
+  top: 1.3rem;
+  left: -250px;
+}
+
+#access-container {
+  height: 100px;
+  width: 350px;
+  font-family: "Hedvig Letters Sans", sans-serif;
+  position: absolute;
+  top: 70%;
+  left: 60px;
+}
+
+#access-container button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: darkgray;
+  font-family: inherit;
+  font-size: 24px;
+  color: #eee;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#access-container p {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  font-size: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: darkgreen;
+}/*# sourceMappingURL=style.css.map */

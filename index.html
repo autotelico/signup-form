@@ -15,7 +15,7 @@
         <div class="side-hero">
             <div class="website-logo-stripe">
                 <div class="image-container">
-                    <img src="./images/cool-banana-logo.jpg"
+                    <img src="./images/cool-banana-logo-no-bg.png"
                         alt="Cool Banana logo. The logo has a smiling banana with sunglasses on, arms open, and palms facing up.">
                 </div>
             </div>
@@ -41,7 +41,7 @@
                                 id="first-name" required></label>
                         <label for="last-name">LAST NAME<br><input type="text" name="last_name" id="last-name" required></label>
                         <label for="email">EMAIL<br><input type="email" name="email" id="email" pattern="[a-z0-9]*@gmail.com" required></label>
-                        <label for="phone">PHONE NUMBER<br><input type="tel" name="phone" id="phone" required></label>
+                        <label for="phone">PHONE NUMBER<br><input type="tel" name="phone" id="phone" maxlength='11' pattern="\d{11}" required></label>
                         <label for="password">PASSWORD<br><input type="password" name="password" id="password" required></label>
                         <label for="confirm-password">CONFIRM PASSWORD<br><input type="text" name="confirm_password"
                                 id="confirm-password" required></label>

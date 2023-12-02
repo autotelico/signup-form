@@ -84,12 +84,13 @@ img {
     position: relative;
     top: 160px;
     left: 60px;
+    background-color: purple;
 }
 
 .heading-container p#heading {
     font-family: $default-font;
     font-size: $heading-size;
-    line-height: 1.6rem;
+    line-height: 2rem;
     @extend %bolden;
 }
 
@@ -141,7 +142,7 @@ input:valid {
     border-color: green;
 }
 
-input:invalid:not(:empty) {
+input:not(:empty):invalid {
     border-color: red;
 }
 
