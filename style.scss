@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Slab:wght@300&display=swap');
 
 $heading-size: 1.6rem;
+$label-size: 0.8rem;
 
 $default-font: 'Hedvig Letters Sans', sans-serif;
 $white-font: #eee;
@@ -63,18 +64,19 @@ img {
 }
 
 // Right side of the website
-.form-container {
+.right-container {
     position: absolute;
-    background-color: #ddd;
+    background-color: #eee;
     height: 100vh;
     width: 60vw;
     left: 40%;
+
 }
 
 .heading-container {
     height: 20%;
     width: 80%;
-    background-color: purple !important;
+    background-color: purple;
     position: relative;
     top: 160px;
     left: 60px;
@@ -83,4 +85,46 @@ img {
 .heading-container p#heading {
     font-family: $default-font;
     font-size: $heading-size;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+.form-container {
+    width: 60vw;
+    height: 40vh;
+    background: peachpuff;
+    position: absolute;
+    top: 40%;
+    left: 60px;
+    padding: 20px 0;
+    font-family: $default-font;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 95%;
+    width: 60%;
+    line-height: 1rem;
+    
+    border: 5px solid purple;
+}
+
+.field {
+    border: 2px solid black;
+    background-color: cyan;
+    height: 1.3rem;
+    width: 150px;
+    font-family: inherit;
+}
+
+.field input {
+    width: 250px;
+    height: 1.3rem;
+}
+
+label {
+    font-size: $label-size;
+    letter-spacing: 2px;
 }
