@@ -11,5 +11,26 @@
     height: 100vh;
     width: 40vw;
     border: 5px solid black;
+    position: relative;
 }
 
+.website-logo-stripe {
+    height: 400px;
+    width: 100%;
+    background: purple;
+    opacity: .8;
+    position: relative;
+    top: 20%;
+}
+
+.website-logo-stripe .image-container {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
