@@ -39,11 +39,11 @@ body {
     width: 100%;
     background: rgba(71, 62, 54, 0.6);
     position: relative;
-    top: 15%;
+    top: 10%;
 }
 
 .website-logo-stripe .image-container {
-    width: 45%;
+    width: 50%;
     height: 100%;
     position: relative;
     margin: 0 auto;
@@ -82,15 +82,14 @@ img {
     height: 20%;
     width: 65%;
     position: relative;
-    top: 160px;
+    top: 12%;
     left: 60px;
-    background-color: purple;
 }
 
 .heading-container p#heading {
     font-family: $default-font;
     font-size: $heading-size;
-    line-height: 2rem;
+    line-height: 2.3rem;
     @extend %bolden;
 }
 
