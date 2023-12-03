@@ -1,6 +1,16 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Slab:wght@300&display=swap");
 #access-container button, label, h2, .heading-container p#heading {
   font-weight: 700;
+}
+
+#confirm-password:user-invalid + span::after, #password:user-invalid + span::after, #phone:user-invalid + span::after, #email:user-invalid + span::after, #last-name:user-invalid + span::after, #first-name:user-invalid + span::after {
+  color: red;
+  font-size: 13px;
+  width: 400px;
+  position: absolute;
+  top: 1.7rem;
+  left: -255px;
 }
 
 body {
@@ -117,6 +127,10 @@ input {
   border: 2px solid black;
 }
 
+span {
+  position: relative;
+}
+
 input:focus {
   border: 2px solid blue;
   box-shadow: 3px 7px 10px darkgray;
@@ -126,8 +140,37 @@ input:valid {
   border-color: green;
 }
 
-input:not(:empty):invalid {
+input:valid + span::after {
+  content: " ✓";
+  color: green;
+}
+
+input:user-invalid {
   border-color: red;
+}
+
+#first-name:user-invalid + span::after {
+  content: "✖ Please type in your first name";
+}
+
+#last-name:user-invalid + span::after {
+  content: "✖ Please type in your last name";
+}
+
+#email:user-invalid + span::after {
+  content: "✖ Email must end with @gmail.com";
+}
+
+#phone:user-invalid + span::after {
+  content: "✖ Type your phone in the following format: XXX-XXX-XXXX";
+}
+
+#password:user-invalid + span::after {
+  content: "✖ Password must be at least 8 characters";
+}
+
+#confirm-password:user-invalid + span::after {
+  content: "✖ Password must be at least 8 characters";
 }
 
 label {
@@ -136,7 +179,7 @@ label {
   line-height: 1.3rem;
 }
 
-input:invalid + label::after {
+input:user-invalid:empty + label::after {
   content: "* Required.";
   color: red;
   position: relative;
