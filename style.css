@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Slab:wght@300&display=swap");
-#access-container button, label, h2, .heading-container p#heading {
+#access-container button, label, #developed-by, h2, .heading-container p#heading {
   font-weight: 700;
 }
 
@@ -89,7 +89,7 @@ img {
 }
 
 .form-container {
-  width: calc(100% - 120px);
+  width: 1100px;
   height: 261px;
   background: peachpuff;
   position: absolute;
@@ -104,12 +104,24 @@ h2 {
   margin-bottom: 10px;
 }
 
+#developed-by {
+  position: absolute;
+  right: 60px;
+  font-size: 1.6rem;
+  color: #aaa;
+  line-height: 2.3rem;
+}
+
+#developed-by a {
+  color: #aaa;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
   height: 300px;
-  width: 600px;
+  width: 900px;
   line-height: 1rem;
   row-gap: 20px;
 }
